@@ -1,0 +1,29 @@
+a:hover{
+    border: none;
+}
+.copyright, .social{
+    margin-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(61, 59, 59);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+ }
+ #facebook{
+    color: #4267B2;
+}
+#insta{
+    color: #8a3ab9;
+}
+#linkedin{
+    color: #0072b1;
+}
+

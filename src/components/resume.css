@@ -1,0 +1,123 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Fira Sans', sans-serif;
+    overflow: none;
+    width: 100%;
+    height: auto;
+    background-color: aquamarine;
+}
+.certification{
+    display: flex;
+    flex-direction: column;
+}
+.certification a{
+    color: rgb(37, 142, 203);
+}
+.course{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+/* .education{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+} */
+#education{
+    position: absolute;
+    top: 550px;
+}
+
+.experience{
+    display: flex;
+    justify-content: space-evenly;
+}
+.hobbies li , .lang li{
+    display: inline-block;
+    margin: 10px;
+    list-style-type: decimal;
+}
+h2{
+    display: flex;
+}
+.intro{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    line-height: normal;
+    position: relative;
+}
+
+/*
+.institute h2{
+    margin-left: -190px;
+} */
+.internship p{
+    font-size: x-small;
+}
+.lang{
+    margin-bottom: 50px;
+}
+#name{
+    font-family: 'fira Sans', sans-serif;
+    font-weight: bolder;
+    color: goldenrod;
+}
+.objective{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    float: left;
+}
+ol{
+    display: flex;
+    color: gold;
+}
+#print{
+    float: right;
+    cursor: pointer;
+}
+.resume{
+    padding: 20px;
+}
+.scldate{
+    padding-left: 150px;    
+    
+}
+.skills{
+    float: left;
+    margin-bottom: 50px;
+}
+/* .skills, .education, .certification, 
+ , .experience, .hobbies{
+    float: left;
+} */
+.short_courses h2{
+    margin-left: -240px;
+}
+.short_courses{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.uni{
+    position: relative;
+}
+.university, .college, .school{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    width: 100%;
+}
+.web_development, .git, .shopify{
+    display: flex;
+    justify-content: space-evenly;
+}

@@ -1,13 +1,11 @@
 import React from 'react'
-import Navbar from './Navigationbar'
 import Details from './Details'
-import Projects from './Projects'
-
+import './style.css'
 const Home = () => {
   return (
    <>
   
-  <Details/>
+  <Details />
   
    </>
   )

@@ -8,8 +8,8 @@ import Resume from './components/Resume';
 import About from './components/About';
 import Contact from './components/Contact'
 import Error from './components/Error';
-import Navigationbar from './components/Navigationbar';
 import CollapsibleExample from './components/CollapsibleExample';
+
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
     <Route  component={Error}/>
    </Switch>
    {/* <Home/> */}
-  
+   
    </>
   );
 }

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
+body{
+    font-family:'Fira Sans', sans-serif;
+}
+#assistant{
+    font-size:xx-large;
+    color: rgb(13, 135, 13)
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    
+ }
+ .content h3{
+     margin-right: 10rem;
+ }
+ #code{
+     font-size:xx-large;
+     color: red
+ }
+ #css{
+    background:linear-gradient(to right, rgb(221, 80, 29) 70%, gray 20%);
+   
+}
+#h1{
+    text-transform: capitalize;
+    margin: 50px 0px 50px 0px;
+    color: #fff;
+    font-family: 'fira Sans', sans-serif;
+    
+}
+
+#html, #css,#js,#react, #jquery{
+    width: 400px;
+    height: 7px;
+    border-radius: 5px;
+}
+#html{
+    background:linear-gradient(to right, red 90%, gray 20%);
+    
+}
+#jquery{
+    background:linear-gradient(to right, rgb(29, 221, 208) 40%, gray 20%);
+   
+}
+#js{
+    background:linear-gradient(to right, rgb(190, 206, 16) 60%, gray 20%);
+    
+}
+label{
+    float: left;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    margin: auto 0px auto 50px;
+}
+#react{
+    background:linear-gradient(to right, rgb(29, 221, 67) 50%, gray 20%);
+   
+}
+.services{
+    display: flex;
+    justify-content: space-around;
+}
+#source{
+    font-size:xx-large;
+    color: rgb(21, 143, 224)
+}
+.VA{
+    margin-bottom: 90px;
+}
+.web, .VA , .writing{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+

@@ -1,6 +1,9 @@
 import React from 'react'
-import './style.css'
+import './details.css'
 import profile from '../images/Naveed.png'
+import Button from 'react-bootstrap/Button';
+
+
 const Details = () => {
   return (
     <>
@@ -11,7 +14,16 @@ const Details = () => {
    <p className='name' id='pn'> Naveed Afridi </p> 
    <p className='name'> Frontend Web Developer</p>
    </div>
+   <div className="btns">
+  <a href="/contact">
+    <Button variant='primary'>Hire me</Button>
+  </a>
+  <a href="/resume">
+  <Button variant="outline-info">Get CV</Button>
+  </a>
+    </div>
    </div>
+   
     </>
   )
 }
