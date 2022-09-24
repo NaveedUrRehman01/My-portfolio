@@ -29,3 +29,10 @@ font-family:'Fira Sans', sans-serif;
  border-bottom: 2px solid white;
     color: white;
 }
+
+#spinner{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #292930;
+}

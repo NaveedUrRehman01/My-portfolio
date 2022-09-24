@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import Home from './components/Home';
 import {Switch, Route} from 'react-router-dom'
@@ -9,12 +9,28 @@ import About from './components/About';
 import Contact from './components/Contact'
 import Error from './components/Error';
 import CollapsibleExample from './components/CollapsibleExample';
-
-
+import Dna from './components/Spinner';
+import './components/style.css'
 function App() {
+  
+  const state = document.readyState;
+  console.log(document.readyState);
+  const [isLoading, setLoading] = useState(state == 'complete');
+  console.log(isLoading);
+  useEffect(()=>{
+    setLoading(state == 'interactive')
+    setTimeout(()=>{
+      setLoading(state == 'complete')
+    }, 4000)
+  },[])
   return (
    <>
    <CollapsibleExample/>
+    {
+      isLoading ? (
+      <Dna  isLoading={isLoading} id='spinner'/>)
+      :
+      (
    <Switch>
     <Route exact path='/' component={Home}/>
     <Route exact path='/home' component={Home}/>
@@ -25,6 +41,9 @@ function App() {
     <Route  excat path='/contact' component={Contact}/>
     <Route  component={Error}/>
    </Switch>
+      )
+    }
+   
    {/* <Home/> */}
    
    </>
