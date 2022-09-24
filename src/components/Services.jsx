@@ -9,7 +9,7 @@ const Services = () => {
    <>
    <h1 id='h1'>What do we Offer</h1>
     <div className="services">
-      <section>
+      <section id='level'>
         <label>HTML</label> <br />
         <div value='90' max='100' id='html'></div>
         <br />

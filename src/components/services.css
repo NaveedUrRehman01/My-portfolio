@@ -76,4 +76,45 @@ label{
    
 }
 
+@media screen and (min-width: 800px) and (max-width: 900px) {
+    #level{
+        position: relative;
+        left: 30%;
+    }
+.services{
+    display: flex;
+    flex-direction: column;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .content{
+        width: 100%;
+       }
+       .content h3{
+        width: 100%;
+       }
+    #level{
+       margin: auto;
+        
+    }
+   .logo{
+    width: 100%;
+    margin: 5px;
+    height: auto;
+   }
+  
+.services{
+    display: flex;
+    flex-direction: column;
+    
+}
+.web, .writing, .VA{
+    display: flex;
+    flex-direction: column;
+}
+.VA{
+    margin-top: 20px;
+}
+}
 

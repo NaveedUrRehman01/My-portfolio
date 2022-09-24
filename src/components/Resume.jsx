@@ -70,8 +70,8 @@ Shopping Plaza Karkhano Market Peshawar
         
         <div className="school">
         <div className="scl">
-        <h4>The Bagram Model School</h4>
-        <h6>Secondary School Certificate	</h6>
+        <h4 >The Bagram Model School</h4>
+        <h6 >Secondary School Certificate	</h6>
         <p>Grade: A-1</p>
         </div>
        <div className="scldate">
@@ -135,7 +135,7 @@ Shopping Plaza Karkhano Market Peshawar
     <div className="experience">
       <div className="internship">
       <h4>Software Engineer & IT Assistant</h4>
-      <p>
+      <p id='p'>
         (Stanley Pharma Industrial Area Hayatabad, Peshawar)
       </p>
       </div>
@@ -162,7 +162,7 @@ Shopping Plaza Karkhano Market Peshawar
       </ul>
     </div>
    </div>
-   <Footer/>
+   <Footer className='footer'/>
     </>
   )
 }

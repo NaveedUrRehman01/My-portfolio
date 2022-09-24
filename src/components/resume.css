@@ -121,3 +121,36 @@ ol{
     display: flex;
     justify-content: space-evenly;
 }
+
+@media screen and (max-width: 599px) {
+    .address br{
+        display: none;
+        width: 100%;
+}
+.certname , .certdate{
+    margin-top: 10px;
+}
+#education{
+    margin-top: 5px;
+}
+.footer{
+    display: none;
+}
+h2{
+    display: flex;
+    justify-content: center;
+}
+    .lang {
+        margin-bottom: 90px ;
+    }
+    #name{
+    font-size: 30px;
+   }
+    .scldate{
+        padding: 0%;
+    }
+    .skills ol{
+        margin-bottom: 20px;
+    }
+    
+}

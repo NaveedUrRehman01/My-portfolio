@@ -9,7 +9,7 @@ const Contact = () => {
   return (
    <>
  
-   <h2>Get In Touch</h2>
+   <h2 id='h2'>Get In Touch</h2>
     <div className="contact">
       <div className="mailsec">
       <h2>Fell Free To Contact Us</h2>
@@ -29,12 +29,12 @@ const Contact = () => {
           <input type="text" name="Name" id="name" />
        
         <label htmlFor="">Email: </label>
-          <input type="text" name="Name" id="name" />
+          <input type="text" name="email" id="Email" />
         <label>Message: </label>
         <textarea name="message" id="message" cols="30" rows="6"></textarea>
         <SendIcon id="button">Send</SendIcon>
       </div>
-      <Footer/>
+      <Footer className='footer'/>
     </div>
    </>
   )

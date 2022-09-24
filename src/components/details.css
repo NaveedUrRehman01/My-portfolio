@@ -59,3 +59,40 @@ body{
     font-size: 50px;
     color: goldenrod;
 }
+
+@media screen and (max-width: 500px) {
+    .details{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+         position: absolute;
+         right: 30%
+        
+    }
+    .name{
+        font-size: large;
+    }
+
+    #pn{
+        font-size: 30px;
+        width: 100%;
+    }
+    #proimg:hover{
+        cursor: pointer;
+            width: 200px;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+    .details{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        flex-direction: column;
+         left: 20%;
+     
+    
+    }
+}

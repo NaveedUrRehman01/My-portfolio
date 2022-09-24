@@ -1,0 +1,56 @@
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+    width: 100%;
+
+}
+.image{width: 50%;}
+.image img{
+    width: 100%;
+    width: 300px;
+    border-radius: 5px;
+}
+.intro {
+    width: 50%;
+}
+.intro p{
+    width: 80%;
+    font-size: larger;
+    text-align: start;
+    line-height: 30px;
+}
+.social_accounts{
+    display: flex;
+    justify-content: center;
+   
+}
+.acc{
+    margin: 15px;
+    cursor: pointer;
+}
+#github{
+    color: white;
+}
+.acc:hover{
+    font-size: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .heading h2{
+        width: 90%;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .image, .intro{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .social_accounts{
+        justify-content: space-between;
+        
+    }
+}
