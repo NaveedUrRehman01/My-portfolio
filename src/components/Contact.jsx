@@ -41,6 +41,7 @@ const Contact = () => {
     message:''
   })
   console.log('clck');
+  alert("Thank You for messaging Us")
   }
 
 
@@ -77,14 +78,14 @@ const Contact = () => {
       <form ref={form}>
         <label htmlFor="">Name:  </label>
           <input type="text" 
-         value={getInfo.user_name} name="user_name" onChange={getData} id="name" />
+         value={getInfo.user_name} name="user_name" onChange={getData} id="name" required />
        
         <label htmlFor="">Email: </label>
           <input type="text" 
-         value={getInfo.user_email} name="user_email" onChange={getData} id="Email" />
+         value={getInfo.user_email} name="user_email" onChange={getData} id="Email" required />
         <label>Message: </label>
         <textarea 
-       value={getInfo.message} name="message" onChange={getData} id="message" cols="30" rows="6"></textarea>
+       value={getInfo.message} name="message" onChange={getData} id="message" cols="30" rows="6" required></textarea>
         <SendIcon id="button" onClick={sendData} >Send</SendIcon>
         </form>
       </div>
