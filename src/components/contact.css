@@ -23,6 +23,10 @@ body{
 color: rgb(225, 32, 32);
 
 }
+form{
+    display: flex;
+    flex-direction: column;
+}
 .formsec #name , #Email{
     color: #000;
 }
@@ -62,36 +66,64 @@ color: #0072b1;
 #twitter{
 color: #00acee;
 }
+@media screen and (max-width: 390px) {
+.contact{
+    overflow-x: hidden;
+    padding: 0%;
+    margin: 0%;
+    width:  90%;
+}
+.mailsec h2{
+    margin-top: 9rem;
+    overflow: hidden;
+    margin-top: 8rem;
+}
+.mailsec p{
+    text-align: center;
+    overflow: hidden;
+}
+.formsec{
+    margin: 10px auto;
+    width: 90%;
+    height: fit-content;
+}
+}
 
 @media screen and (max-width: 600px) {
    
     .contact {
         display: flex;
         flex-direction: column;
-      width: 100%;
-      padding: 0%;
-      margin: 0%;
+        justify-content: center;
+      width: 95%;
+      margin: 10px auto;
+   
     }
 
     #h2{
         font-size: 30px;
         display: flex;
         justify-content: center;
-        margin-top: 20px;
+        /* margin-top: 70px; */
     }
     .mailsec{
         display: flex;
-        width: 100%;
+        width: 95%;
         height: auto;
-        margin-top: 20px;
+        margin-top: 15rem;
     }
     .mailsec h2{
         display: flex;
         justify-content: center;
     }
+    .formsec{
+        height: auto;
+        width: 95%;
+    }
     .footer{
-      display: flex;
+      display: hidden;
         flex-direction: column;
+        
     }
   }
   @media screen and (max-width: 992px) {

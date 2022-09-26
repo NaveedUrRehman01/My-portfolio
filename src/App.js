@@ -15,13 +15,13 @@ function App() {
   
   const state = document.readyState;
   console.log(document.readyState);
-  const [isLoading, setLoading] = useState(state == 'complete');
+  const [isLoading, setLoading] = useState(state );
   console.log(isLoading);
   useEffect(()=>{
     setLoading(state == 'interactive')
     setTimeout(()=>{
       setLoading(state == 'complete')
-    }, 4000)
+    }, 2000)
   },[])
   return (
    <>

@@ -14,16 +14,13 @@ const Footer = () => {
             <p>Copyright © 2021 - 2022 - Free CSS. All Rights Reserved</p>
         </div>
         <div className="social">
-            <a href="http://" target='blank'>
+            <a href="https://www.instagram.com/afridi_naved/" target='blank'>
           <InstagramIcon id="insta"/>
             </a>
-            <a href="http://" target='blank'>
+            <a href="https://twitter.com/naveed_afridi99/status/1501165525426225155?s=21" target='blank'>
                 <TwitterIcon id="twitter"/>
             </a>
-            <a href="http://" target='blank'>
-                <FacebookIcon id="facebook"/>
-            </a>
-            <a href="http://" target='blank'>
+            <a href="https://www.linkedin.com/in/naveed-ur-rehman-974054176" target='blank'>
                <LinkedInIcon id='linkedin'/>
             </a>
         </div>
