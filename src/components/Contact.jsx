@@ -5,26 +5,45 @@ import SendIcon from '@mui/icons-material/Send';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
+import validator from 'validator'
 import Footer from './Footer';
+import { fontSize } from '@mui/system';
 const Contact = () => {
    
+  const [error, setError] = useState('')
+
+  
   const form = useRef();
+
   const [getInfo, setInfo] = useState({
-    name:'',
-    email:'',
+    user_name:'',
+    user_email:'',
     message:'',
   });
-  
+  // 
   const getData = (event)=>{
     const {name, value} = event.target;
-    console.log(getInfo.name, getInfo.email, getInfo.message);
+    console.log(value);
+    // console.log(getInfo.name, getInfo.email, getInfo.message);
     setInfo((prevalue)=>{
       return{
         ...prevalue,
         [name]: value,
         
       }
+      
+     
         })
+        if(validator.isEmail(event.target.value)){
+            // setError('Valid Email')
+            setError(document.getElementById('err').style.display = 'none')
+            
+        } else
+        { 
+         
+          setError('Invalid Email')
+        }
+      
   }
 
   const sendData = (event)=>{
@@ -35,6 +54,7 @@ const Contact = () => {
     }, (error) => {
         console.log(error.text);
     });
+  
   setInfo({
     user_name:'',
     user_email:'',
@@ -42,9 +62,8 @@ const Contact = () => {
   })
   console.log('clck');
   alert("Thank You for messaging Us")
-  }
-
-
+  
+}
   // const sendEmail = (e) => {
   //   e.preventDefault();
 
@@ -83,10 +102,11 @@ const Contact = () => {
         <label htmlFor="">Email: </label>
           <input type="text" 
          value={getInfo.user_email} name="user_email" onChange={getData} id="Email" required />
+      {error && <p id='err' style={{color: 'red', fontSize:'small'}}>{error}</p>}
         <label>Message: </label>
         <textarea 
        value={getInfo.message} name="message" onChange={getData} id="message" cols="30" rows="6" required></textarea>
-        <SendIcon id="button" onClick={sendData} >Send</SendIcon>
+        <SendIcon id="button"  onClick={sendData} disabled={true}>Send</SendIcon>
         </form>
       </div>
       

@@ -53,6 +53,10 @@ input , textarea{
     background-color: transparent;
     color: #000;outline: none;
 }
+textarea
+{
+    height: 150px;
+}
 #linkedin{
 color: #0072b1;
 }
