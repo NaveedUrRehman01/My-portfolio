@@ -6,7 +6,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import Link from '@material-ui/core/Link';
+
 const About = () => {
   return (
     <>
@@ -28,18 +28,18 @@ I was quite weak and disappointed but pratice and consistency made me good enoug
     </div>
 
     <div className="social_accounts">
-    <Link href="https://github.com/NaveedUrRehman01/GithubUserSearchApp.git" target="_blank" >
+    <a href="https://github.com/NaveedUrRehman01/GithubUserSearchApp.git" target="_blank" >
     <GitHubIcon className='acc' id='github'/>
-</Link>
-    <Link href="https://www.instagram.com/afridi_naved/" target="_blank" >
+</a>
+    <a href="https://www.instagram.com/afridi_naved/" target="_blank" >
     <InstagramIcon className='acc' id='insta'/>
-</Link>
-    <Link href="https://twitter.com/naveed_afridi99/status/1501165525426225155?s=21" target="_blank" >
+</a>
+    <a href="https://twitter.com/naveed_afridi99/status/1501165525426225155?s=21" target="_blank" >
     <TwitterIcon className='acc' id='twitter'/>
-</Link>
-    <Link href="https://www.linkedin.com/in/naveed-ur-rehman-974054176" target="_blank" >
+</a>
+    <a href="https://www.linkedin.com/in/naveed-ur-rehman-974054176" target="_blank" >
     <LinkedInIcon className='acc' id='linkedin'/>
-</Link>
+</a>
         
           
     </div>
