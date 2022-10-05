@@ -18,9 +18,9 @@ function App() {
   const [isLoading, setLoading] = useState(state );
   console.log(isLoading);
   useEffect(()=>{
-    setLoading(state == 'interactive')
+    setLoading(state == 'complete')
     setTimeout(()=>{
-      setLoading(state == 'complete')
+      setLoading(state == ' interactive')
     }, 2000)
   },[])
   return (
