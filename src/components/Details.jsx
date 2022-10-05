@@ -15,10 +15,10 @@ const Details = () => {
    <p className='name'> Frontend Web Developer</p>
    </div>
    <div className="btns">
-  <a href="/contact">
+  <a href="/Contact">
     <Button variant='primary'>Hire me</Button>
   </a>
-  <a href="/resume">
+  <a href="/Resume">
   <Button variant="outline-info">Get CV</Button>
   </a>
     </div>
