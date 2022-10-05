@@ -23,6 +23,7 @@ const Footer = () => {
             <a href="https://www.linkedin.com/in/naveed-ur-rehman-974054176" target='blank'>
                <LinkedInIcon id='linkedin'/>
             </a>
+            
         </div>
     </div>
     </>
