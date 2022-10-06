@@ -16,7 +16,8 @@ const Details = () => {
    </div>
    <div className="btns">
   <a href="/Contact">
-    <Button variant='primary'>Hire me</Button>
+    {/* <Button variant='primary'>Hire me</Button> */}
+    <button>Hime Me</button>
   </a>
   <a href="/Resume">
   <Button variant="outline-info">Get CV</Button>

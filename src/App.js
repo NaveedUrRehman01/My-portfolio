@@ -15,22 +15,22 @@ function App() {
   
   const state = document.readyState;
   console.log(document.readyState);
-  const [isLoading, setLoading] = useState(state );
-  console.log(isLoading);
-  useEffect(()=>{
-    setLoading(state == 'complete')
-    setTimeout(()=>{
-      setLoading(state == ' interactive')
-    }, 2000)
-  },[])
+  // const [isLoading, setLoading] = useState(state );
+  // console.log(isLoading);
+  // useEffect(()=>{
+  //   setLoading(state == 'complete')
+  //   setTimeout(()=>{
+  //     setLoading(state == ' interactive')
+  //   }, 2000)
+  // },[])
   return (
    <>
    <CollapsibleExample/>
-    {
+    {/* {
       isLoading ? (
       <Dna  isLoading={isLoading} id='spinner'/>)
       :
-      (
+      ( */}
    <Switch>
     <Route exact path='/' component={Home}/>
     <Route exact path='/home' component={Home}/>
@@ -41,8 +41,8 @@ function App() {
     <Route  excat path='/contact' component={Contact}/>
     <Route  component={Error}/>
    </Switch>
-      )
-    }
+      {/* )
+    } */}
    
    {/* <Home/> */}
    
